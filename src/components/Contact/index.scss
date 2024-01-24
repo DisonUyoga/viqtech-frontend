@@ -1,0 +1,74 @@
+
+@import 'animate.css';
+@import 'loaders.css/src/animations/pacman.scss';
+
+.contact__form{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  margin-top: 30px;
+  .form__text{
+    // opacity: 0;
+    animation: pulse 1s 1s forwards;
+  }
+  form{
+    padding: 10px;
+    input{
+      display: block;
+      padding: 10px;
+      margin-top: 5px;
+      width: 100%;
+      margin-bottom: 5px;
+      min-width: 275px;
+      border-radius: 5px;
+      border: 1px solid;
+      &:hover{
+        border: 1px solid #ffd700;
+      }
+
+    }
+    textarea{
+      display: block;
+      width: 100%;
+      min-height: 100px;
+      border: 1px solid;
+      border-radius: 5px;
+      &:hover{
+        border: 1px solid #ffd700;
+      }
+    }
+    button{
+      margin-top: 10px;
+      float: right;
+      &:hover{
+        background: #ffd700;
+        color: #413939;
+      }
+    }
+  }
+}
+.map__wrap{
+  
+  width:100%;
+  height: 100%;
+
+}
+.leaflet-container{
+  width: 100%;
+  height: 100%;
+//   display: flex;
+//   // position: relative;
+//   // opacity: 0;
+//   // align-items: center;
+//   // justify-content: center;
+//   // animation: backInRight 1s 1.2s;
+//   // animation-fill-mode: forwards;
+  
+}
+@media (max-width:728px){
+  .leaflet-container{
+    opacity: 1;
+    display: block;
+  }
+}
