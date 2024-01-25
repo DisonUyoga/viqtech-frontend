@@ -10,7 +10,8 @@ import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import {PersistGate} from 'redux-persist/integration/react'
 
-axios.defaults.baseURL = "http://18.236.77.85";
+// axios.defaults.baseURL = "http://18.236.77.85";
+axios.defaults.baseURL = "https://electronics233.pythonanywhere.com";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
